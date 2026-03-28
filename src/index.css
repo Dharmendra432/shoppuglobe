@@ -1,0 +1,268 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #005fcc;
+}
+
+/* Header */
+header {
+  background: #0077ff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+header nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: 500;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Product Item */
+.product-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.product-item:hover {
+  transform: translateY(-5px);
+}
+.product-item img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.product-item h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+.product-item p {
+  color: #0077ff;
+  font-weight: bold;
+}
+
+/* Cart */
+.cart {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px;
+}
+.cart h2 {
+  margin-bottom: 15px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.cart-item h4 {
+  flex: 1;
+  margin-left: 10px;
+}
+.cart-item input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Product Detail */
+.product-detail {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px;
+  text-align: center;
+}
+.product-detail img {
+  max-width: 300px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.product-detail h2 {
+  margin-bottom: 10px;
+}
+.product-detail p {
+  margin: 10px 0;
+}
+
+/* Checkout */
+.checkout {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.checkout h2, .checkout h3 {
+  margin-bottom: 15px;
+}
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.checkout-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.checkout button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkout button:hover {
+  background-color: #005fcc;
+}
+.checkout ul {
+  list-style: none;
+  padding-left: 0;
+}
+.checkout li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Not Found */
+.not-found {
+  text-align: center;
+  padding: 50px;
+}
+.not-found h2 {
+  font-size: 2rem;
+  color: #ff4444;
+}
+.not-found p {
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product-item img {
+    height: 140px;
+  }
+}
+.checkout h3 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.checkout ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checkout li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+.checkout h3 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.checkout ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checkout li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+.header {
+  background: #0077ff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+body {
+  padding-top: 70px; /* prevent content hiding behind navbar */
+}
+
