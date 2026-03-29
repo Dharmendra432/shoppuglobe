@@ -11,7 +11,6 @@ export default function ProductDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     fetch(`https://dummyjson.com/products/${id}`)
       .then(res => res.json())
       .then(data => {
