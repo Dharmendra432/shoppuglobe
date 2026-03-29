@@ -10,7 +10,6 @@ export default function App() {
       <Suspense fallback={<p>Loading...</p>}>
         <ProductList />
       </Suspense>
-      //
     </>
   );
 }
