@@ -1,7 +1,7 @@
 🛒 ShoppyGlobe E-Commerce App (React + Vite)
 🔗 GitHub Repository
 👉 Add your repo link here
-https://github.com/your-username/shoppyglobe
+https://github.com/Dharmendra432/shoppyglobe
 
 📌 Project Overview
 ShoppyGlobe is a basic e-commerce web application built using React + Vite.
